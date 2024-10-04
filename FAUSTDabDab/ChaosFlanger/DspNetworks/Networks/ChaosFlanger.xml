@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Network ID="ChaosFlanger" AllowCompilation="1" Version="0.0.0">
+  <Node FactoryPath="container.chain" ID="ChaosFlanger" Bypassed="0"
+        Name="ChaosFlanger">
+    <Nodes>
+      <Node ID="faust" FactoryPath="core.faust" Bypassed="0" Name="faust">
+        <Properties>
+          <Property ID="ClassId" Value="ChaosFlanger"/>
+          <Property ID="NumParameters" Value="0"/>
+        </Properties>
+        <Parameters>
+          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                     ID="Feedback" Value="0.75"/>
+          <Parameter MinValue="0.0" MaxValue="350.0" StepSize="0.009999999776482582"
+                     ID="FlangeLeft" Value="50.0"/>
+          <Parameter MinValue="0.0" MaxValue="350.0" StepSize="0.009999999776482582"
+                     ID="FlangeRight" Value="50.0"/>
+          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Invert" Value="0.0"/>
+          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.009999999776482582"
+                     ID="Strength" Value="0.5"/>
+          <Parameter MinValue="0.0" MaxValue="10.0" StepSize="0.009999999776482582"
+                     ID="Speed" Value="3.0"/>
+        </Parameters>
+        <SwitchTargets/>
+      </Node>
+    </Nodes>
+    <Parameters/>
+  </Node>
+</Network>
