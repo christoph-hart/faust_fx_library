@@ -9,11 +9,11 @@
 
 // Include third party header files ----------------
 
-#include "zita_reverb.h"
+#include "MonoFlanger.h"
 
 // Include compiled network files ------------------
 
-#include "script_fx1.h"
+#include "FlangerM.h"
 
 #if (defined (_WIN32) || defined (_WIN64))
 #pragma warning( pop )

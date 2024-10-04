@@ -27,8 +27,8 @@ struct Factory: public scriptnode::dll::StaticLibraryHostFactory
 		TempoSyncer::initTempoData();
 		// Node registrations -------------------------------------------------------------------
 		
-		registerPolyNode<project::zita_reverb<1>, wrap::illegal_poly<project::zita_reverb<1>>>();
-		registerPolyNode<project::script_fx1<1>, wrap::illegal_poly<project::script_fx1<1>>>();
+		registerPolyNode<project::MonoFlanger<1>, wrap::illegal_poly<project::MonoFlanger<1>>>();
+		registerPolyNode<project::FlangerM<1>, wrap::illegal_poly<project::FlangerM<1>>>();
 	}
 };
 }
