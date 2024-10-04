@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Network ID="FlangerM" AllowCompilation="1" Version="0.0.0">
+  <Node FactoryPath="container.chain" ID="FlangerM" Bypassed="0" Name="FlangerM">
+    <Nodes>
+      <Node ID="faust" FactoryPath="core.faust" Bypassed="0" Name="faust">
+        <Properties>
+          <Property ID="ClassId" Value="MonoFlanger"/>
+          <Property ID="NumParameters" Value="0"/>
+        </Properties>
+        <Parameters>
+          <Parameter MinValue="0.0" MaxValue="250.0" StepSize="0.009999999776482582"
+                     ID="Delay" Value="50.0"/>
+          <Parameter MinValue="0.0" MaxValue="0.9800000190734863" StepSize="0.001000000047497451"
+                     ID="Feedback" Value="0.75"/>
+          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Invert" Value="0.0"/>
+          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.009999999776482582"
+                     ID="Strength" Value="0.5"/>
+        </Parameters>
+        <SwitchTargets/>
+      </Node>
+    </Nodes>
+    <Parameters/>
+  </Node>
+</Network>
