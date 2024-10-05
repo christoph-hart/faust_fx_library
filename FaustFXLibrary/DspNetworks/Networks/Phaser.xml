@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Network ID="Phaser" AllowCompilation="1" Version="0.0.0">
+  <Node FactoryPath="container.chain" ID="Phaser" Bypassed="0" Name="Phaser">
+    <Nodes>
+      <Node ID="faust" FactoryPath="core.faust" Bypassed="0" Name="faust">
+        <Properties>
+          <Property ID="ClassId" Value="PhaserStereo"/>
+          <Property ID="NumParameters" Value="0"/>
+        </Properties>
+        <Parameters>
+          <Parameter MinValue="0.0" MaxValue="100.0" StepSize="0.009999999776482582"
+                     ID="Intensity" Value="50.0"/>
+          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Modes" Value="0.0"/>
+          <Parameter MinValue="0.0" MaxValue="5.0" StepSize="0.001000000047497451"
+                     ID="Speed" Value="0.5"/>
+          <Parameter MinValue="50.0" MaxValue="150.0" StepSize="1.0" ID="Width" Value="100.0"/>
+        </Parameters>
+        <SwitchTargets/>
+      </Node>
+    </Nodes>
+    <Parameters/>
+  </Node>
+</Network>
