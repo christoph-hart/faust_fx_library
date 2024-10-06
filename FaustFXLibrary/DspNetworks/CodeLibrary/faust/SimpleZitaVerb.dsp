@@ -1,0 +1,12 @@
+declare name "Simple ZitaVerb";
+declare version "1.0";
+declare author "Dabbu Debendra";
+declare copyright "(c)HISE";
+import("stdfaust.lib");
+t60m = hslider("Decay[style:knob]", 10, 0.5, 30, 0.01):si.smooth(0.999):min(30):max(0.5);
+t60dc = 50;
+rdel = 10;
+f1 = 500;
+f2 = hslider("Damping[style:knob]", 650, 50, 1500, 0.01);
+fsmax = 32000;
+process = re.zita_rev1_stereo(rdel,f1,f2,t60dc,t60m,fsmax);

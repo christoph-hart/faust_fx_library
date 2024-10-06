@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Network ID="Verb" AllowCompilation="1" Version="0.0.0">
+  <Node FactoryPath="container.chain" ID="Verb" Bypassed="0" Name="Verb">
+    <Nodes>
+      <Node ID="faust" FactoryPath="core.faust" Bypassed="0" Name="faust">
+        <Properties>
+          <Property ID="ClassId" Value="SimpleZitaVerb"/>
+          <Property ID="NumParameters" Value="0"/>
+        </Properties>
+        <Parameters>
+          <Parameter MinValue="50.0" MaxValue="1500.0" StepSize="0.009999999776482582"
+                     ID="Damping" Value="650.0"/>
+          <Parameter MinValue="0.5" MaxValue="30.0" StepSize="0.009999999776482582"
+                     ID="Decay" Value="10.0"/>
+        </Parameters>
+        <SwitchTargets/>
+      </Node>
+    </Nodes>
+    <Parameters/>
+  </Node>
+</Network>
